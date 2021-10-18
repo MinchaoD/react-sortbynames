@@ -90,17 +90,15 @@ function InformationTable({list}) {
           <th style={style.tableCell}>Last name</th>
           <th style={style.tableCell}>Phone</th>
         </tr>
-        <tr>
+       
         {list.map((item, index) => {
           return (
-            <>
+            <tr>
               <th style={style.tableCell} key={index}>{item.userFirstname}</th>  
-              <th style={style.tableCell} key={index}>{item.userLastname}</th>   
-              <th style={style.tableCell} key={index}>{item.userPhone}</th>   
-            </>
+              <th style={style.tableCell} key={index}>{item.userLastname}</th>  
+              <th style={style.tableCell} key={index}>{item.userPhone}</th>
+            </tr>
         )})}
-         
-        </tr>
       </thead> 
     </table>
   );
